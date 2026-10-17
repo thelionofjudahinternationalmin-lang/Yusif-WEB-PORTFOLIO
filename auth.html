@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Login | Lion of Judah Ministries International</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+      color: #222;
+    }
+    .container {
+      width: min(92%, 440px);
+      margin: 45px auto;
+      padding: 28px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 5px 24px #00000012;
+    }
+    h1 { font-size: 23px; text-align: center; color: #173d73; }
+    p { line-height: 1.5; }
+    label { display: block; margin-top: 14px; font-weight: bold; }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 7px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 14px;
+      border: 0;
+      border-radius: 7px;
+      background: #173d73;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button.secondary { background: #52708e; }
+    #message { overflow-wrap: anywhere; }
+    .small { text-align: center; font-size: 13px; color: #555; }
+    a { color: #173d73; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Lion of Judah Ministries International</h1>
+    <p class="small">Member Registration and Login</p>
+
+    <form id="registerForm">
+      <h2>Create an account</h2>
+      <label for="regEmail">Email address</label>
+      <input id="regEmail" type="email" autocomplete="email" required>
+
+      <label for="regPassword">Password (at least 8 characters)</label>
+      <input id="regPassword" type="password"
+        autocomplete="new-password" minlength="8" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <hr style="margin: 25px 0;">
+
+    <form id="loginForm">
+      <h2>Member Login</h2>
+      <label for="loginEmail">Email address</label>
+      <input id="loginEmail" type="email" autocomplete="email" required>
+
+      <label for="loginPassword">Password</label>
+      <input id="loginPassword" type="password"
+        autocomplete="current-password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <button id="resendButton" class="secondary" hidden>
+      Resend verification email
+    </button>
+
+    <button id="logoutButton" class="secondary" hidden>
+      Logout
+    </button>
+
+    <p id="message" role="status" aria-live="polite"></p>
+    <p class="small">
+      <a href="index.html">Return to church website</a>
+    </p>
+  </main>
+
+  <script type="module" src="./auth.js"></script>
+</body>
+</html>

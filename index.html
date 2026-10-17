@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Lion of Judah Ministries International. Join us for worship, prayer, Bible study and fellowship.">
+  <title>Lion of Judah Ministries International</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="brand">🦁 LION OF JUDAH MINISTRIES INTERNATIONAL</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO OUR MINISTRY</p>
+        <h1>Experience God's Love, Power and Presence</h1>
+        <p>A place of prayer, faith, worship, hope and spiritual growth. Come and experience the goodness of God with us.</p>
+        <a class="button" href="#services">Join Our Services</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <p class="eyebrow">WHO WE ARE</p>
+      <h2>About Our Ministry</h2>
+      <p class="intro">Lion of Judah Ministries International is committed to sharing the Word of God, encouraging believers, building faith and reaching people with the love of Jesus Christ.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Our Mission</h3>
+          <p>To share God's Word and lead people into a closer relationship with Jesus Christ.</p>
+        </article>
+        <article class="card">
+          <h3>Our Vision</h3>
+          <p>To nurture a community of believers grounded in faith, prayer, love and service.</p>
+        </article>
+        <article class="card">
+          <h3>Our Values</h3>
+          <p>Faith, love, integrity, unity, prayer and commitment to God's Word.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section light" id="services">
+      <p class="eyebrow">WORSHIP WITH US</p>
+      <h2>Our Fellowship</h2>
+      <div class="service-box">
+        <h3>WEEKLY SERVICE</h3>
+        <p><strong>Day:</strong> Deliverance Service Every Thursday</p>
+        <p><strong>Time:</strong> 6:00 PM</p>
+        <p><strong>Day:</strong> Divine Service Every Sunday</p>
+        <p><strong>Time:</strong> 10:00 AM</p>
+        <p><strong>Location:</strong> 42 Bright Street, Brookfields</p>
+        <p>Join us for prayer, worship, Bible study and fellowship.</p>
+      </div>
+      <p class="scripture">"For where two or three are gathered together in my name, there am I in the midst of them." — Matthew 18:20</p>
+    </section>
+
+    <section class="section" id="events">
+      <p class="eyebrow">BE PART OF THE FAMILY</p>
+      <h2>Church News & Events</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Prayer Meetings</h3>
+          <p>Come together in prayer and seek God's guidance.</p>
+        </article>
+        <article class="card">
+          <h3>Bible Study</h3>
+          <p>Grow in understanding of Scripture and strengthen your faith.</p>
+        </article>
+        <article class="card">
+          <h3>Special Programmes</h3>
+          <p>Stay connected with ministry programmes and announcements.</p>
+        </article>
+      </div>
+      <p class="note">Specific dates and times will be announced here.</p>
+    </section>
+
+    <section class="section light" id="contact">
+      <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+      <h2>Contact & Prayer Requests</h2>
+      <p class="intro">Have a question or a prayer request? Write your message below.</p>
+
+      <form id="contactForm">
+        <input type="hidden" name="access_key" value="47d80c20-ae6f-4396-8d78-d4941bb20e52">
+        <input type="hidden" name="subject" value="New Prayer Request - Lion of Judah Ministries International">
+        <input type="hidden" name="to_email" value="lionofjudahinternationalmin@gmail.com">
+
+        <label for="visitorName">Your name</label>
+        <input id="visitorName" name="name" type="text" required placeholder="Enter your name">
+
+        <label for="visitorEmail">Your email</label>
+        <input id="visitorEmail" name="email" type="email" required placeholder="Enter your email">
+
+        <label for="visitorMessage">Your message or prayer request</label>
+        <textarea id="visitorMessage" name="message" rows="5" required placeholder="Write your message here"></textarea>
+
+        <button class="button" id="sendButton" type="submit">Send Prayer Request</button>
+        <p id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-brand">🦁 Lion of Judah Ministries International</p>
+    <p>Jesus Christ is the Answer Church.</p>
+    <p>&copy; <span id="year"></span> Lion of Judah Ministries International</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

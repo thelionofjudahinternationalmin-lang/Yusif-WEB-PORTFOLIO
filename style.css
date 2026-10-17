@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222b3a;
+  line-height: 1.7;
+}
+
+.header {
+  min-height: 76px;
+  background: #071b38;
+  color: white;
+  padding: 16px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  color: #f2c15b;
+  font-weight: bold;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #f2c15b;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 0;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+  color: white;
+  background:
+    linear-gradient(90deg, #071b38 0%, #071b38dd 55%, #071b3866 100%),
+    url("https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1800&q=85")
+    center / cover no-repeat;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.eyebrow {
+  color: #b57b12;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.hero .eyebrow {
+  color: #f2c15b;
+}
+
+h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.hero-content > p:not(.eyebrow) {
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: inline-block;
+  background: #dba735;
+  color: #071b38;
+  border: none;
+  border-radius: 6px;
+  padding: 13px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #f2c15b;
+}
+
+.section {
+  padding: 75px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  color: #071b38;
+  font-size: clamp(28px, 4vw, 38px);
+  margin-bottom: 20px;
+}
+
+.intro {
+  max-width: 760px;
+  margin: 0 auto 35px;
+}
+
+.light {
+  background: #f1f5fa;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.card,
+.service-box {
+  background: white;
+  border-radius: 10px;
+  padding: 27px;
+  box-shadow: 0 5px 20px #071b3810;
+}
+
+.card h3,
+.service-box h3 {
+  color: #a97510;
+  margin-bottom: 12px;
+}
+
+.service-box {
+  max-width: 550px;
+  margin: 25px auto;
+  text-align: left;
+  border-top: 4px solid #dba735;
+}
+
+.scripture {
+  max-width: 700px;
+  margin: 30px auto 0;
+  font-style: italic;
+}
+
+.note {
+  margin-top: 25px;
+  color: #606b7b;
+}
+
+form {
+  max-width: 600px;
+  margin: 30px auto 0;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 16px 0 6px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 13px;
+  font: inherit;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form .button {
+  margin-top: 18px;
+}
+
+#formMessage {
+  margin-top: 15px;
+}
+
+footer {
+  background: #071b38;
+  color: white;
+  text-align: center;
+  padding: 32px 15px;
+}
+
+.footer-brand {
+  color: #f2c15b;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 760px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 65px 7%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 55px 7%;
+  }
+}
+body {
+    background-image: url("images/church.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
