@@ -262,3 +262,116 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+/* Church header and logo */
+.church-header {
+  background: #101b35;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.church-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.church-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.church-name h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.church-name p {
+  color: #e5bd59;
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+
+/* General Overseer section */
+.overseer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.overseer-photo {
+  width: 280px;
+  height: 330px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  border: 4px solid #d4af37;
+}
+
+.overseer-info {
+  max-width: 600px;
+}
+
+.welcome-text {
+  color: #a17b13;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.overseer-info h2 {
+  color: #101b35;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.overseer-info h3 {
+  color: #b08d26;
+  margin-top: 0;
+}
+
+.overseer-info p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Mobile phone layout */
+@media (max-width: 650px) {
+  .church-brand {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .church-logo {
+    width: 85px;
+    height: 85px;
+  }
+
+  .church-name h1 {
+    font-size: 23px;
+  }
+
+  .overseer-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 18px;
+    gap: 22px;
+  }
+
+  .overseer-photo {
+    width: 230px;
+    height: 280px;
+  }
+
+  .overseer-info h2 {
+    font-size: 25px;
+  }
+}
